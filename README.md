@@ -6,19 +6,19 @@ Android 开发者，关注本地优先、隐私友好的工具与 DeepSeek Harne
 
 ## 🧩 DeepSeek Harness 插件
 
-### dsh-vision · DSH Computer Use
+### vision-use · DSH Computer Use
 
-> 让 Agent 真正看见 Windows 屏幕并直接操作桌面：视觉通道（截屏进上下文）+ 鼠标/键盘控制 + Codex 风格蓝色覆盖层，按 **Esc** 随时中止。
+> 让 Agent 真正看见 Windows 屏幕并直接操作桌面：视觉通道（截屏进上下文）+ 鼠标/键盘控制 + Codex 风格蓝色覆盖层，按 **Esc** 随时中止。支持 Windows 原生 / WSL 环境自动识别。
 
 <div align="center">
 
-[![Repo](https://img.shields.io/badge/dsh--vision-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/dsh-vision)
-[![Release](https://img.shields.io/github/v/release/zzy6-a/dsh-vision?style=for-the-badge&label=release)](https://github.com/zzy6-a/dsh-vision/releases)
-[![Install](https://img.shields.io/badge/Install-tgz-2e7d32?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/dsh-vision/releases/latest)
+[![Repo](https://img.shields.io/badge/vision--use-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/vision-use)
+[![Release](https://img.shields.io/github/v/release/zzy6-a/vision-use?style=for-the-badge&label=release)](https://github.com/zzy6-a/vision-use/releases)
+[![Install](https://img.shields.io/badge/Install-tgz-2e7d32?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/vision-use/releases/latest)
 
 </div>
 
-### dsh-upgrade-guard · DSH 升级安全网
+### dsh-upgrade-guard · DSH 兼容卫士
 
 > 宿主升级后自动巡检插件兼容性，支持升级、修复或禁用；宿主启动失败时由宿主外 supervisor 自动救援，必要时回滚到上一个宿主版本。
 
