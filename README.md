@@ -30,6 +30,18 @@ Android 开发者，关注本地优先、隐私友好的工具与 DeepSeek Harne
 
 </div>
 
+### dsh-prompt-enhance · 提示词增强
+
+> composer 输入框旁的一键提示词增强：把口语化的一句话改写成目标明确、细节完整的任务说明，可一键撤销；五种改写风格、模型可跟随可固定，含 @引用 / 命令芯片时自动置灰保护。
+
+<div align="center">
+
+[![Repo](https://img.shields.io/badge/dsh--prompt--enhance-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/dsh-prompt-enhance)
+[![Release](https://img.shields.io/github/v/release/zzy6-a/dsh-prompt-enhance?style=for-the-badge&label=release)](https://github.com/zzy6-a/dsh-prompt-enhance/releases)
+[![Install](https://img.shields.io/badge/Install-tgz-2e7d32?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/dsh-prompt-enhance/releases/latest)
+
+</div>
+
 ## 📱 应用与站点
 
 | 项目 | 说明 |
