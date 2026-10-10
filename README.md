@@ -5,7 +5,7 @@ Android 开发者，关注本地优先、隐私友好的工具与 DeepSeek Harne
 <div align="center">
 
 [![Blog](https://img.shields.io/badge/Blog-zzy6.dpdns.org-0071e3?style=for-the-badge&logo=hexo&logoColor=white)](https://zzy6.dpdns.org/)
-[![RSS](https://img.shields.io/badge/RSS-atom.xml-f26522?style=for-the-badge&logo=rss&logoColor=white)](https://zzy6.dpdns.org/atom.xml)
+[![Archive](https://img.shields.io/badge/Archive-archives-f26522?style=for-the-badge)](https://zzy6.dpdns.org/archives/)
 
 </div>
 
