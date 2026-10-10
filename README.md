@@ -2,6 +2,13 @@
 
 Android 开发者，关注本地优先、隐私友好的工具与 DeepSeek Harness 插件生态。
 
+<div align="center">
+
+[![Blog](https://img.shields.io/badge/Blog-zzy6.dpdns.org-0071e3?style=for-the-badge&logo=hexo&logoColor=white)](https://zzy6.dpdns.org/)
+[![RSS](https://img.shields.io/badge/RSS-atom.xml-f26522?style=for-the-badge&logo=rss&logoColor=white)](https://zzy6.dpdns.org/atom.xml)
+
+</div>
+
 ---
 
 ## 🧩 DeepSeek Harness 插件
@@ -47,7 +54,7 @@ Android 开发者，关注本地优先、隐私友好的工具与 DeepSeek Harne
 | 项目 | 说明 |
 |---|---|
 | [口袋记账 PocketBooks](https://github.com/zzy6-a/pocket-books) | 轻量、智能、完全本地的 Android 记账应用 · [下载中心](https://zzy6-a.github.io/pocket-books/) |
-| [zzy-blog](https://github.com/zzy6-a/zzy-blog) | 个人静态博客 · [访问](https://zzy6-a.github.io/zzy-blog/) |
+| [zzy-blog](https://github.com/zzy6-a/zzy-blog) | 个人博客 · [zzy6.dpdns.org](https://zzy6.dpdns.org/)（旧 GitHub Pages 地址已自动跳转） |
 | [滏阳没有海](https://github.com/zzy6-a/fuyang) | 纯静态网页解谜 / ARG · 零依赖、断网可玩 · [开始游戏](https://zzy6-a.github.io/fuyang/) |
 
 ## 🛠 技术栈
