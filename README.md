@@ -1,11 +1,14 @@
-# Hi there 👋 我是 zzy6-a
-
-Android 开发者，关注本地优先、隐私友好的工具与 DeepSeek Harness 插件生态。
-
 <div align="center">
 
-[![Blog](https://img.shields.io/badge/Blog-zzy6.dpdns.org-0071e3?style=for-the-badge&logo=hexo&logoColor=white)](https://zzy6.dpdns.org/)
-[![Archive](https://img.shields.io/badge/Archive-archives-f26522?style=for-the-badge)](https://zzy6.dpdns.org/archives/)
+# zzy6-a
+
+**Android 开发者 · 本地优先的工具制造者**
+
+`Kotlin` · `Jetpack Compose` · `TypeScript` · `Node.js` · `PowerShell`
+
+写给自己的工具，顺手开源。
+
+[博客](https://zzy6.dpdns.org/) · [文章归档](https://zzy6.dpdns.org/archives/) · [全部仓库](https://github.com/zzy6-a?tab=repositories)
 
 </div>
 
@@ -13,62 +16,64 @@ Android 开发者，关注本地优先、隐私友好的工具与 DeepSeek Harne
 
 ## 🧩 DeepSeek Harness 插件
 
-### vision-use · DSH Computer Use
+> 让 Agent 在自己的桌面上真正干活。
 
-> 让 Agent 真正看见 Windows 屏幕并直接操作桌面：视觉通道（截屏进上下文）+ 鼠标/键盘控制 + Codex 风格蓝色覆盖层，按 **Esc** 随时中止。支持 Windows 原生 / WSL 环境自动识别。
+| 插件 | 一句话 | 状态 |
+| :-- | :-- | :-- |
+| **[vision-use](https://github.com/zzy6-a/vision-use)**<br><sub>DSH Computer Use</sub> | 看见屏幕、操作键鼠，并且**能按控件名定位**——UI Automation 的 pattern 点击不移动鼠标 | **`v0.3.0`** |
+| **[dsh-prompt-enhance](https://github.com/zzy6-a/dsh-prompt-enhance)**<br><sub>提示词增强</sub> | 输入框旁一键把口语改写成目标明确的完整任务说明，可撤销 | `active` |
+| dsh-upgrade-guard<br><sub>兼容卫士</sub> | 宿主升级后巡检插件兼容性，启动失败时由宿主外 supervisor 救援并回滚 | `archived` |
 
-<div align="center">
+### vision-use · 0.3.0 有什么
 
-[![Repo](https://img.shields.io/badge/vision--use-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/vision-use)
-[![Release](https://img.shields.io/github/v/release/zzy6-a/vision-use?style=for-the-badge&label=release)](https://github.com/zzy6-a/vision-use/releases)
-[![Install](https://img.shields.io/badge/Install-tgz-2e7d32?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/vision-use/releases/latest)
+| 能力 | 说明 |
+| :-- | :-- |
+| **按名字点，不算坐标** | `uia_find` 列出候选控件（名称 / 类型 / 中心点 / 可用 pattern），`uia_click` 优先走 invoke / toggle / select / expand —— **鼠标不动**，点完回传前后 UI 指纹，让你知道到底变了没有 |
+| **近景确认** | `uia_locate` 只回一张以控件为中心的裁剪图，回执里不带坐标 —— 用眼睛核对，不用算术 |
+| **一次调用做一串** | `computer_sequence` 把 `click → type → key → wait → shot` 合成一次进程、一次模型往返，通常省 30–60 秒 |
+| **截被遮挡的窗口** | `view_screen` 的 `hwnd` 走 PrintWindow，窗口被别的窗口盖住也能截到真实内容；`grid` 画坐标标尺，`marker` 画红十字核对落点 |
+| **中文能输入了** | `computer_type` 的 `method: auto`：ASCII 用真实按键；含中文或超长文本走剪贴板，**用完还原你原来的剪贴板** |
+| **看得见它在动** | Codex 风格蓝色边框 + 顶部状态徽章 + 光标光环 + 点击涟漪，按 **Esc** 随时中止；回合结束后约 4 秒自动收 |
 
-</div>
+```powershell
+dsh plugin --profile desktop add https://github.com/zzy6-a/vision-use/releases/latest/download/dsh-vision-0.3.0.tgz
+```
 
-### dsh-upgrade-guard · DSH 兼容卫士
+<sub>[发布页](https://github.com/zzy6-a/vision-use/releases) · [中文说明](https://github.com/zzy6-a/vision-use#readme) · [English](https://github.com/zzy6-a/vision-use/blob/main/README_EN.md)</sub>
 
-> 宿主升级后自动巡检插件兼容性，支持升级、修复或禁用；宿主启动失败时由宿主外 supervisor 自动救援，必要时回滚到上一个宿主版本。
-
-<div align="center">
-
-[![Repo](https://img.shields.io/badge/dsh--upgrade--guard-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/dsh-upgrade-guard)
-[![Release](https://img.shields.io/github/v/release/zzy6-a/dsh-upgrade-guard?style=for-the-badge&label=release)](https://github.com/zzy6-a/dsh-upgrade-guard/releases)
-[![Install](https://img.shields.io/badge/Install-tgz-2e7d32?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/dsh-upgrade-guard/releases/latest)
-
-</div>
-
-### dsh-prompt-enhance · 提示词增强
-
-> composer 输入框旁的一键提示词增强：把口语化的一句话改写成目标明确、细节完整的任务说明，可一键撤销；五种改写风格、模型可跟随可固定，含 @引用 / 命令芯片时自动置灰保护。
-
-<div align="center">
-
-[![Repo](https://img.shields.io/badge/dsh--prompt--enhance-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/dsh-prompt-enhance)
-[![Release](https://img.shields.io/github/v/release/zzy6-a/dsh-prompt-enhance?style=for-the-badge&label=release)](https://github.com/zzy6-a/dsh-prompt-enhance/releases)
-[![Install](https://img.shields.io/badge/Install-tgz-2e7d32?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zzy6-a/dsh-prompt-enhance/releases/latest)
-
-</div>
+---
 
 ## 📱 应用与站点
 
 | 项目 | 说明 |
-|---|---|
-| [口袋记账 PocketBooks](https://github.com/zzy6-a/pocket-books) | 轻量、智能、完全本地的 Android 记账应用 · [下载中心](https://zzy6-a.github.io/pocket-books/) |
-| [zzy-blog](https://github.com/zzy6-a/zzy-blog) | 个人博客 · [zzy6.dpdns.org](https://zzy6.dpdns.org/)（旧 GitHub Pages 地址已自动跳转） |
-| [滏阳没有海](https://github.com/zzy6-a/fuyang) | 纯静态网页解谜 / ARG · 零依赖、断网可玩 · [开始游戏](https://zzy6-a.github.io/fuyang/) |
+| :-- | :-- |
+| [fuyang · 滏阳没有海](https://github.com/zzy6-a/fuyang) | 纯静态网页解谜 / ARG · 零依赖、断网可玩 · [开始游戏](https://zzy6-a.github.io/fuyang/) |
+| [zzy-blog](https://github.com/zzy6-a/zzy-blog) | 个人博客（Hexo + Redefine）· [zzy6.dpdns.org](https://zzy6.dpdns.org/) |
+| [ai-radar](https://github.com/zzy6-a/ai-radar) | AI 实时态势 PWA：新模型 · 价格变动 · 社区热帖 · 开源趋势 |
+| [ScyroxTray](https://github.com/zzy6-a/ScyroxTray) | SCYROX / Compx 无线鼠标电量托盘工具（旧款 V6/V8 也支持） |
 
-## 🛠 技术栈
+## 📦 已归档
 
-`Kotlin` · `Jetpack Compose` · `Material 3` · `Room` · `MVVM` · `TypeScript` · `Node.js` · `PowerShell`
+这些项目不再维护，代码和发布继续留在原处，只读可查。
 
-- Android 开发背景，现在也写 TypeScript + Node.js 插件
-- 关注本地优先、可离线运行、隐私友好的工具
+| 项目 | 说明 |
+| :-- | :-- |
+| [pocket-books · 口袋记账](https://github.com/zzy6-a/pocket-books) | 轻量、智能、完全本地的 Android 记账应用 · [下载中心](https://zzy6-a.github.io/pocket-books/) |
+| [dsh-upgrade-guard · 兼容卫士](https://github.com/zzy6-a/dsh-upgrade-guard) | DSH 宿主升级巡检与启动救援 |
 
-## 联系我
+---
+
+## 🛠 我在做什么
+
+- **Android**：Kotlin + Compose + Material 3 + Room，MVVM
+- **DSH 生态**：TypeScript + Node.js 插件，PowerShell 绑 Windows 原生能力
+- **偏爱**：本地优先、可离线、不收集数据；能跑在自己机器上的东西
+
+## 联系
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-zzy6--a-181717?style=flat&logo=github&logoColor=white)](https://github.com/zzy6-a)
-[![Email](https://img.shields.io/badge/Email-1982779986%40qq.com-c14438?style=flat&logo=maildotru&logoColor=white)](mailto:1982779986@qq.com)
+[![Email](https://img.shields.io/badge/1982779986%40qq.com-c14438?style=flat-square&logo=maildotru&logoColor=white)](mailto:1982779986@qq.com)
+[![GitHub](https://img.shields.io/badge/zzy6--a-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/zzy6-a)
 
 </div>
