@@ -2,7 +2,7 @@
 
 # zzy6-a
 
-**独立开发的学生 · 喜欢 `vibecoding` · 爱折腾 · 用 `deepseek`**
+**学生 · 独立开发者 · 用 `deepseek` 把想法写成能跑的代码**
 
 <sub>给 Agent 造工具，也给自己造工具</sub>
 
@@ -30,11 +30,11 @@
 
 > 让 Agent 在自己的桌面上真正干活
 
-- **[vision-use](https://github.com/zzy6-a/vision-use)** <img height="17" alt="release" src="https://img.shields.io/github/v/release/zzy6-a/vision-use?style=flat-square&label=&color=2e7d32" /> <sub>DSH Computer Use</sub>
+- [![vision-use](https://img.shields.io/github/v/release/zzy6-a/vision-use?style=flat-square&label=vision-use&labelColor=24292f&color=2e7d32)](https://github.com/zzy6-a/vision-use) <sub>DSH Computer Use</sub>
 
   让 Agent 看见并操作 Windows 桌面 —— 会按控件名找按钮，点的时候鼠标不动；截被遮挡的窗口照样清楚；中文也能输入。
 
-- **[dsh-prompt-enhance](https://github.com/zzy6-a/dsh-prompt-enhance)** <img height="17" alt="release" src="https://img.shields.io/github/v/release/zzy6-a/dsh-prompt-enhance?style=flat-square&label=&color=2e7d32" /> <sub>提示词增强</sub>
+- [![dsh-prompt-enhance](https://img.shields.io/github/v/release/zzy6-a/dsh-prompt-enhance?style=flat-square&label=dsh-prompt-enhance&labelColor=24292f&color=2e7d32)](https://github.com/zzy6-a/dsh-prompt-enhance) <sub>提示词增强</sub>
 
   输入框旁的一键改写：把你随口一句要求，变成目标明确的任务书，不满意可以撤销。
 
